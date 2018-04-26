@@ -21,7 +21,7 @@ class Patient
     @appointments.each do |appointment|
       @doctors<<appointment.doctor
     end
-    @appointments
+    @doctors
   end
 
 end
