@@ -1,4 +1,4 @@
-class Doctor
+class Appointment
 
 
 end
