@@ -19,5 +19,6 @@ class Genre
     @songs.each do |song|
     @artists<<song.artist
   end
+  end
 
 end
