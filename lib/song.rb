@@ -8,5 +8,9 @@ class Song
    @genre.add_song(self)
  end
 
+ def artist
+   @artist
+ end
+
 
 end
