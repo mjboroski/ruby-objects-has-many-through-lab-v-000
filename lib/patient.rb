@@ -17,7 +17,8 @@ class Patient
 
   def artists
     @songs.each do |song|
-    @artists<<song.artist
+      @artists<<song.artist
+    end
   end
 
 end
