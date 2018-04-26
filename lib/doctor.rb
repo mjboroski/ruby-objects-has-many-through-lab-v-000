@@ -18,8 +18,9 @@ class Doctor
 
   def patients
     @appointments.each do |appointment|
-      appointment.patient.collect
+      @patients<<appointment.patient
     end
+    @patients
   end
 
 end
