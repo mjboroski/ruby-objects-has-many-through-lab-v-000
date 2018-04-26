@@ -1,14 +1,15 @@
 class Patient
 
-  attr_accessor :songs, :artists, :name
+  attr_accessor :name, :appointments, :doctors
 
   def initialize(name)
     @name=name
-    @songs=[]
+    @appointments=[]
   end
 
-  def add_song(song)
-    @songs<<song
+  def add_appointment(appointment)
+    @appointments<<appointment
+    appointment.patient=self
   end
 
   def songs
