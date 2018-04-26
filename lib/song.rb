@@ -12,5 +12,8 @@ class Song
    @artist
  end
 
-
+ def genre
+   @genre
+ end
+ 
 end
