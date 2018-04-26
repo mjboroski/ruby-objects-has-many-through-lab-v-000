@@ -12,13 +12,13 @@ class Patient
     appointment.patient=self
   end
 
-  def songs
-    @songs
+  def appointments
+    @appointments
   end
 
-  def artists
-    @songs.each do |song|
-      @artists<<song.artist
+  def doctors
+    @appointments.each do |appointment|
+      @doctors<<appointment.doctors
     end
   end
 
