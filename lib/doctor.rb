@@ -17,7 +17,9 @@ class Doctor
   end
 
   def patients
-    @appointments.each do {|appointment| @patients<<appointment.patient}
+    @appointments.each do |appointment|
+      @patients<<appointment.patient
+    end
   end
 
 end
