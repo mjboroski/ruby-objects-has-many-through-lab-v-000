@@ -1,11 +1,11 @@
 class Appointment
 
-  attr_accessor :name, :genre
+  attr_accessor :name, :patient
 
-  def initialize(name, genre)
+  def initialize(name, patient)
     @name=name
-    @genre=genre
-    @genre.add_song(self)
+    @patient=patient
+    @doctor.add_appointment(self)
   end
 
 
