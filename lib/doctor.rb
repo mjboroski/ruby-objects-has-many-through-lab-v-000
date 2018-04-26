@@ -1,23 +1,23 @@
 class Doctor
 
-  attr_accessor :name, :songs, :genres
+  attr_accessor :name, :appointments, :patients
 
-  def innitialize(name)
+  def initialize(name)
     @name=name
-    @songs=[]
+    @appointments=[]
   end
 
-  def add_song(song)
-    @songs<<song
-    song.artist<<self
+  def add_appointment(appointment)
+    @appointments<<appointment
+    appointment.doctor<<self
   end
 
-  def songs
-    @songs
+  def appointments
+    @appointments
   end
 
-  def genres
-    @songs.each do {|song| @genres<<song.genre}
+  def patients
+    @appointments.each do {|appointment| @patients<<appointment.patient}
   end
 
 end
